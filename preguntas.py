@@ -73,8 +73,7 @@ def pregunta_03():
     # Importe Pipeline
     # Importe OneHotEncoder
     from sklearn.compose import make_column_selector,make_column_transformer
-    from sklearn.feature_selection import SelectKBest
-    from sklearn.feature_selection import f_regression
+    from sklearn.feature_selection import SelectKBest,f_regression
     from sklearn.linear_model import LinearRegression
     from sklearn.model_selection import GridSearchCV
     from sklearn.pipeline import Pipeline
@@ -100,7 +99,7 @@ def pregunta_03():
             # características más importantes. Utilice la función f_regression.
             (
                 "selectKBest",
-                SelectKBEst(score_func=f_regression),
+                SelectKBest(score_func=f_regression),
             ),
             # Paso 3: Construya un modelo de regresión lineal.
             (
