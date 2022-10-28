@@ -18,10 +18,10 @@ def pregunta_01():
     -------------------------------------------------------------------------------------
     """
     # Lea el archivo `insurance.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv("insurance.csv",sep=",",thousands=None)
+    df = pd.read_csv('insurance.csv',sep=",",thousands=None)
 
     # Asigne la columna `charges` a la variable `y`.
-    y = df.harges
+    y = df.charges
 
     # Asigne una copia del dataframe `df` a la variable `X`.
     X = df.copy()
